@@ -8,9 +8,11 @@ repos:
     rev: v1.2.3
     hooks:
     - id: flake8
+      additional_dependencies: [pep8-naming]
       args: [--max-line-length=88]
 -   repo: https://github.com/pre-commit/mirrors-mypy
     rev: v0.660
     hooks:
     - id: mypy
       language_version: python3.7
+
