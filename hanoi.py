@@ -40,7 +40,7 @@ if __name__ == "__main__":
     print(tower_b)
     print(tower_c)
     hanoiFunc(tower_a, tower_c, tower_b, num_discs)
-    print("-------After Game------")
+    print("--------After Game------")
     print(tower_a)
     print(tower_b)
     print(tower_c)
