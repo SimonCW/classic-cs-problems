@@ -27,7 +27,8 @@ def fib_it(n: int) -> int:
 
 def fib_gen(n: int) -> Generator[int, None, None]:
     yield 0
-    if n > 0: yield 1
+    if n > 0:
+        yield 1
     last: int = 0
     next: int = 1
 
@@ -39,6 +40,7 @@ def fib_gen(n: int) -> Generator[int, None, None]:
 @pytest.mark.parametrize("fib_func", [fib_it, fib_rec])
 def test_fib_fourth_equal_two(fib_func):
     assert fib_func(3) == 2
+
 
 @pytest.mark.parametrize("fib_func", [fib_it, fib_rec])
 def test_fib_eight_equal_thirteen(fib_func):
