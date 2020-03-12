@@ -1,4 +1,4 @@
-from src.dna_search import string_to_gene
+from dna_search import string_to_gene
 
 
 def test_string_to_gene_basic():
